@@ -14,6 +14,9 @@
 		1A364FC11B93FE5900BD3358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A364FC01B93FE5900BD3358 /* Images.xcassets */; };
 		1A364FC41B93FE5900BD3358 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A364FC21B93FE5900BD3358 /* LaunchScreen.xib */; };
 		1A364FD01B93FE5A00BD3358 /* HRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A364FCF1B93FE5A00BD3358 /* HRefreshTests.m */; };
+		1A364FDB1B941C2A00BD3358 /* UIScrollView+MyRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A364FDA1B941C2A00BD3358 /* UIScrollView+MyRefresh.m */; };
+		1A364FDE1B941C6A00BD3358 /* DefaultTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A364FDD1B941C6A00BD3358 /* DefaultTopView.m */; };
+		1A364FE11B94264B00BD3358 /* DefaultBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A364FE01B94264B00BD3358 /* DefaultBottomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		1A364FC91B93FE5900BD3358 /* HRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A364FCE1B93FE5900BD3358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A364FCF1B93FE5A00BD3358 /* HRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRefreshTests.m; sourceTree = "<group>"; };
+		1A364FD91B941C2900BD3358 /* UIScrollView+MyRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MyRefresh.h"; sourceTree = "<group>"; };
+		1A364FDA1B941C2A00BD3358 /* UIScrollView+MyRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MyRefresh.m"; sourceTree = "<group>"; };
+		1A364FDC1B941C6A00BD3358 /* DefaultTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTopView.h; sourceTree = "<group>"; };
+		1A364FDD1B941C6A00BD3358 /* DefaultTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTopView.m; sourceTree = "<group>"; };
+		1A364FDF1B94264B00BD3358 /* DefaultBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultBottomView.h; sourceTree = "<group>"; };
+		1A364FE01B94264B00BD3358 /* DefaultBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultBottomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1E2A811B958C0700514800 /* MyRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				1A364FD91B941C2900BD3358 /* UIScrollView+MyRefresh.h */,
+				1A364FDA1B941C2A00BD3358 /* UIScrollView+MyRefresh.m */,
+				1A364FDC1B941C6A00BD3358 /* DefaultTopView.h */,
+				1A364FDD1B941C6A00BD3358 /* DefaultTopView.m */,
+				1A364FDF1B94264B00BD3358 /* DefaultBottomView.h */,
+				1A364FE01B94264B00BD3358 /* DefaultBottomView.m */,
+			);
+			name = MyRefresh;
+			sourceTree = "<group>";
+		};
 		1A364FA71B93FE5900BD3358 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 		1A364FB21B93FE5900BD3358 /* HRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				1A1E2A811B958C0700514800 /* MyRefresh */,
 				1A364FB71B93FE5900BD3358 /* AppDelegate.h */,
 				1A364FB81B93FE5900BD3358 /* AppDelegate.m */,
 				1A364FBA1B93FE5900BD3358 /* ViewController.h */,
@@ -222,6 +245,9 @@
 				1A364FBC1B93FE5900BD3358 /* ViewController.m in Sources */,
 				1A364FB91B93FE5900BD3358 /* AppDelegate.m in Sources */,
 				1A364FB61B93FE5900BD3358 /* main.m in Sources */,
+				1A364FDE1B941C6A00BD3358 /* DefaultTopView.m in Sources */,
+				1A364FDB1B941C2A00BD3358 /* UIScrollView+MyRefresh.m in Sources */,
+				1A364FE11B94264B00BD3358 /* DefaultBottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +442,7 @@
 				1A364FD51B93FE5A00BD3358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A364FD61B93FE5A00BD3358 /* Build configuration list for PBXNativeTarget "HRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +451,7 @@
 				1A364FD81B93FE5A00BD3358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

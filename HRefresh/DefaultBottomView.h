@@ -8,6 +8,32 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DefaultBottomView : UIView
+@protocol BottomViewDelagate <NSObject>
+
+-(void)showBeforeRefresh;
+
+@end
+
+enum BottomRefreshStates {
+    BottomRefreshStates_Normal = 1,
+    BottomRefreshStates_BeforeRefresh = 2,
+    BottomRefreshStates_Refreshing = 3,
+};
+
+@interface DefaultBottomView : UIView <BottomViewDelagate>
+
+@property(nonatomic,weak) id actionTar;
+
+@property(nonatomic,assign) SEL action;
+
+@property(nonatomic,assign) int BottomRefreshStates;
+
+@property(nonatomic,weak)UIScrollView *parentScrollView;
+
+- (instancetype)initWithFrame:(CGRect)frame WithParentTableView:(UIScrollView *)tableView;
+
+@property(nonatomic,assign)BOOL isLoading;
+
+- (void)adjustStatusByBottomY:(float)y;
 
 @end

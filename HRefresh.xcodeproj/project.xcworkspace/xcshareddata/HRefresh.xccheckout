@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A35DE8C5-2913-4D5A-8A46-F67B08C877AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HRefresh</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6AA4F0B28B3756F0DBD21FABD1AC930438F4B15</key>
+		<string>github.com:MrHuanghanzhang/HRefresh.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HRefresh.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6AA4F0B28B3756F0DBD21FABD1AC930438F4B15</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:MrHuanghanzhang/HRefresh.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6AA4F0B28B3756F0DBD21FABD1AC930438F4B15</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6AA4F0B28B3756F0DBD21FABD1AC930438F4B15</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HRefresh</string>
+		</dict>
+	</array>
+</dict>
+</plist>
